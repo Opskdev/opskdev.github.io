@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Redirigiendo...</title>
+<script>
+// Captura el token de Supabase del hash y redirige a confirm.html
+var hash = window.location.hash;
+var search = window.location.search;
+if (hash || search) {
+  window.location.replace(
+    'https://opskdev.github.io/Skysense-EPC/confirm.html' + search + hash
+  );
+} else {
+  window.location.replace('https://opskdev.github.io/Skysense-EPC/');
+}
+</script>
+</head>
+<body>
+<p>Redirigiendo...</p>
+</body>
+</html>
